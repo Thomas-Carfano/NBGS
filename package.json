@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.15.1",
+    "react-clock": "^4.1.0"
+  }
+}
