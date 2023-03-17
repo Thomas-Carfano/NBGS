@@ -55,7 +55,7 @@ img {
     margin-left: 250px;
     position: absolute;
     top: 0px;
-    height: 96px;
+    height: 95px;
     width: 96px;
 }
 
@@ -73,3 +73,32 @@ img {
     font-size: 30px;
     text-align: center;
   }
+  .container {
+    position: relative;
+  }
+  .text-block {
+    position:absolute;
+    text-align:initial;
+    display: inline;
+    left: 0%;
+    background-color: green;
+    color: black;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin-left: 0%;
+    top: 0px;
+    height: 86px;
+    width: 96px;
+  }
+
+
+#clock {
+  left: 0%;
+  color: black;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin-left: 55%;
+  top: 35px;
+  height: 86px;
+  width: 50px;
+}
