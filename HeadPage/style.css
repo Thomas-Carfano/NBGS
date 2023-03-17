@@ -13,6 +13,7 @@ h1{
     padding: 30px;
     font-size: 30px;
     padding-top: 30px;
+    text-decoration: none;
 }
 
 h2{
@@ -37,7 +38,7 @@ h3{
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: relative;
+  text-align: center;
   text-decoration: whitesmoke;
   display: inline-block;
   font-size: 16px;
@@ -45,6 +46,9 @@ h3{
   margin-right: 75px;
   margin-left: 150px;
   cursor: pointer;
+  width: 7%;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 
 img {
