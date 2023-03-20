@@ -5,7 +5,3 @@
     "react-clock": "^4.1.0"
   }
 }
-"scripts": {
-  "golf": "cypress open",
-  "run golf": "cypress run",
-}
