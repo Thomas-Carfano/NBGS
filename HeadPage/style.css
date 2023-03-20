@@ -51,12 +51,24 @@ h3{
   border-collapse: collapse;
 }
 
-img {
+.gitLink {
     margin-left: 250px;
     position: absolute;
     top: 0px;
     height: 95px;
     width: 96px;
+}
+
+.mainBackground {
+  width: 100%;
+  height: auto;
+  
+}
+
+.subBackground {
+  width: 100%;
+  height: auto;
+  
 }
 
 .grid-container {
@@ -101,4 +113,16 @@ img {
   top: 35px;
   height: 86px;
   width: 50px;
+}
+
+.locationMap {
+  position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+}
+
+.locationMap iframe {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
