@@ -52,8 +52,8 @@ h3{
 }
 
 .gitLink {
-    margin-left: 250px;
-    position: absolute;
+    margin-left: 15%;
+    position: fixed;
     top: 0px;
     height: 95px;
     width: 96px;
@@ -73,18 +73,41 @@ h3{
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto; 
     background-color: white;
     border-color: darkgreen;
     padding: 10px;
   }
+  .grid-container-balls {
+    display: grid;
+    grid-template-columns: 33% 33% 33%; 
+    grid-template-rows: 10% 10% 10% 10%;
+    background-color: white;
+    border-color: darkgreen;
+    padding: 10px;
+  }
+  .grid-item-balls {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
-  }
+    }
+
+  .grid-item img{
+    flex: 25%;
+    height: 100%;
+    background-size: 0%;
+    position: relative;
+      }
+
   .container {
     position: relative;
   }
