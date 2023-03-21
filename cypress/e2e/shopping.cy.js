@@ -1,9 +1,17 @@
-describe("Shopping page", () => {
-  beforeEach(() => {
-    cy.visit("/");
-  });
+import { MainPage } from "../Pages/shopping-page.cy";
+
+beforeEach(() => {
+  cy.visit("/");
 });
-it("should not run", function () {
-  cy.visit("/").click('[ data-cy="shopping-page"]');
-  // cy.visit("/").click('[data-cy="shopping-page"]');
+it("should visit shopping page", function () {
+  cy.get(MainPage.shoppingPage).click();
+});
+it("should visit location page", function () {
+  cy.get('[data-cy="location-page"]').click();
+});
+it("should visit contact us page", function () {
+  cy.get('[data-cy="contact-page"]').click();
+});
+it("should visit about us page", function () {
+  cy.get('[data-cy="about-page"]').click();
 });
