@@ -152,3 +152,38 @@ h3{
 a, a:visited, a:hover, a:active {
   color: inherit;
 }
+
+form {
+  border: 4px solid whitesmoke;
+}
+
+/* Add some padding and a grey background color to containers */
+.container-signup {
+  padding: 10px;
+  padding-left: 1%;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 25%;
+  padding: 12px;
+  display: flex;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
