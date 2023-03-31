@@ -70,6 +70,7 @@ h3{
   height: auto;
   
 }
+/* Grid Start */
 
 .grid-container {
     display: grid;
@@ -80,19 +81,18 @@ h3{
   }
   .grid-container-balls {
     display: grid;
-    grid-template-columns: 33% 33% 33%; 
-    grid-template-rows: 10% 10% 10% 10%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 3% 3% 3% 3%;
     background-color: white;
     border-color: darkgreen;
     padding: 10px;
   }
-  .grid-item-balls {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    }
+  .golf-balls-in-grid{
+    height: 200%;
+    position: relative;
+    padding-bottom: 25%;      
+  }
+
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -100,17 +100,12 @@ h3{
     font-size: 30px;
     text-align: center;
     }
-
-  .grid-item img{
-    flex: 25%;
-    height: 100%;
-    background-size: 0%;
-    position: relative;
-      }
-
   .container {
     position: relative;
   }
+ /* Grid End */
+
+  /* Clock Start */
   .text-block {
     position:absolute;
     text-align:initial;
@@ -137,6 +132,7 @@ h3{
   height: 86px;
   width: 50px;
 }
+/* Clock End */ 
 
 .locationMap {
   position: relative;
@@ -159,12 +155,23 @@ form {
 
 /* Add some padding and a grey background color to containers */
 .container-signup {
-  padding: 10px;
-  padding-left: 1%;
+  padding: 0%;
+  padding-left: 2%;
 }
+
+
+
+/* Email Sign Up Start */
 
 /* Style the input elements and the submit button */
 input[type=text], input[type=submit] {
+  width: 25%;
+  padding: 12px;
+  display: flex;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=email], input[type=submit] {
   width: 25%;
   padding: 12px;
   display: flex;
@@ -187,3 +194,4 @@ input[type=submit] {
 input[type=submit]:hover {
   opacity: 0.8;
 }
+/*Email Sign Up End */

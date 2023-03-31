@@ -29,5 +29,27 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.9155491097035!2d-117.88377062427591!3d33.659350038374065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdfab83b59461%3A0x7be89f232167ae28!2s3100%20Irvine%20Ave%2C%20Newport%20Beach%2C%20CA%2092660!5e0!3m2!1sen!2sus!4v1679267847149!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-
+      <body>
+        <div id="location"></div>
+        <script>
+          var div = document.getElementById("location");
+    
+          function getLocation() {
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition, console.log);
+            } else {
+              div.innerHTML = "The Browser Does not Support Geolocation";
+            }
+          }
+    
+          function showPosition(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            var api_key = "AIzaSyDfasT1eQ3i4rUENnZyPUmGRWvjKumAgPE";
+            var img_url = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=14&size=400x300&sensor=false&key=${api_key}`;
+            div.innerHTML = `<img src='${img_url}'>`;
+          }
+          getLocation();
+        </script>
+      </body>
     
