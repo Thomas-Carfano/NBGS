@@ -22,8 +22,7 @@
   <h2>Golf Shop Phone Number: <a href="tel:949-250-1900" style="color:green" >(949) 250-1900</a></h2>
   <h2>Golf Course Phone Number: <a href="tel:949-474-4424" style="color:green" >(949) 474-4424</a></h2>
   <h2>Golf Course & Shop Address: <a href="https://maps.google.com/maps?q=3100 Irvine Ave Newport Beach, CA, 92660" style="color:green" >3100 Irvine Ave. Newport Beach, CA, 92646 </a></h2>
-  <br>
-  <h2>Subscribe to our Newsletter</h2>
+  <h2>Subscribe to our Newsletter:</h2>
 </p>
 
 
@@ -32,15 +31,15 @@
     </div>
   
     <div class="container-signup" style="background-color:whitesmoke">
-      <input type="text" placeholder="Name" name="name" required>
-      <input type="text" placeholder="Email address" name="mail" required>
+      <input class="emailName" type="text" placeholder="Name" name="name" required>
+      <input class="emailAddress" type="email" placeholder="Email address" name="mail" required>
       <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+        <input type="checkbox" checked="checked" name="subscribe"> Subscribe To Weekly Emails
       </label>
     </div>
   
     <div class="container-signup">
-      <input type="submit" value="Subscribe">
+      <input class="submitEmail" type="submit" value="Subscribe" onclick="loadDoc()">
     </div>
-    
+  
   </form>

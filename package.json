@@ -1,7 +1,11 @@
 {
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.15.1",
-    "cypress": "^12.8.1",
+    "jquery": "^3.6.4",
     "react-clock": "^4.1.0"
+  },
+  "devDependencies": {
+    "cypress": "^12.8.1",
+    "typescript": "^5.0.2"
   }
 }
