@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <header> 
-       <meta charset="utf-8" />
+  <title>GOLF SHOP WEBSITE</title>
+  <meta charset="utf-8" />
+  <link id="cssStylePage" rel="stylesheet" href="style.css" />
 </header>
 
-<head> 
-  <title>GOLF SHOP WEBSITE</title>
-  <link id="cssStylePage" rel="stylesheet" href="style.css" />
-</head>
-
-   <body class="Title">
+<body>
     <a style="text-decoration: none" href="https://www.nbgolfshop.com/">
-      <h1> Steve Carfano's Newport Beach Golf Shop
-     </a> 
+      <h1> Steve Carfano's Newport Beach Golf Shop 
+     </a>
+     
       <a href="https://github.com/Thomas-Carfano/NBGS" target="_blank" rel="noopener noreferrer"> 
        <img class="gitLink" id="nbgsLogo" src="../Pictures/NBGS pic.jpeg" alt="Golf-Shop-Logo">
       </a>
     </h1>
 
-<p>
-  <h2>Golf Shop Phone Number: <a href="tel:949-250-1900" style="color:green" >(949) 250-1900</a></h2>
-  <h2>Golf Course Phone Number: <a href="tel:949-474-4424" style="color:green" >(949) 474-4424</a></h2>
-  <h2>Golf Course & Shop Address: <a href="https://maps.google.com/maps?q=3100 Irvine Ave Newport Beach, CA, 92660" style="color:green" >3100 Irvine Ave. Newport Beach, CA, 92646 </a></h2>
-  <h2>Subscribe to our Newsletter:</h2>
-</p>
+      <div class="text-block">
+        <h3> <div id="clock" style="position: absolute;">
+          <script src="../app.js"> </script>
+        </h3>
+      </div>
+    
+      <div class="locationMap" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.9155491097035!2d-117.88377062427591!3d33.659350038374065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdfab83b59461%3A0x7be89f232167ae28!2s3100%20Irvine%20Ave%2C%20Newport%20Beach%2C%20CA%2092660!5e0!3m2!1sen!2sus!4v1679267847149!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
-
-<form>
-    <div class="container-signup">
-    </div>
-  
-    <div class="container-signup" style="background-color:whitesmoke">
-      <input class="emailName" type="text" placeholder="Name" name="name" required>
-      <input class="emailAddress" type="email" placeholder="Email address" name="mail" required>
-      <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Subscribe To Weekly Emails
-      </label>
-    </div>
-  
-    <div class="container-signup">
-      <input class="submitEmail" type="submit" value="Subscribe" onclick="loadDoc()">
-    </div>
-  
-  </form>
+</body>
